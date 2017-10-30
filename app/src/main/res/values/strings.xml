@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">顶牛检测</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">UUID 0xffe8接收:</string>
+    <string name="label_device_address">MAC地址:</string>
+    <string name="label_state">连接状态:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">已连接</string>
+    <string name="connecting">连接中....</string>
+    <string name="disconnected">断开连接</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="TXD">发送数据:</string>
+
+</resources>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000">
+        <TextView
+            android:id="@+id/add_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="设置"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/come"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标签格式"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dip"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:paddingLeft="30dip"
+                        android:text="GPRS:"
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <RadioButton
+                        android:id="@+id/button2"
+                        android:checked="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dip"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:paddingLeft="30dip"
+                        android:text="WIFI："
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <RadioButton
+                        android:id="@+id/button3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dip"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:paddingLeft="30dip"
+                        android:text="Bluetooth："
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <RadioButton
+                        android:id="@+id/button4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dip"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:paddingLeft="30dip"
+                        android:text="Rfid(需要NFC功能)："
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <RadioButton
+                        android:id="@+id/button5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dip"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:paddingLeft="30dip"
+                        android:text="ZigBee(需要ZigBee助手)："
+                        android:textSize="14dip" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:background="?android:attr/listDivider" />
+
+                    <RadioButton
+                        android:id="@+id/button6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="34dip"
+                        android:button="@null"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:paddingLeft="30dip"
+                        android:text="二维码/条形码："
+                        android:textSize="14dip" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/hui"></LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="30dp"
+                    android:text="自动搜索间隔"
+                    android:textColor="@color/blank"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edittime"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/bg"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:text="10"
+                    android:maxLength="2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="20dp"
+                    android:text="S" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/hui"></LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="30dp"
+                    android:text="屏幕常亮"
+                    android:textColor="@color/blank"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/ch_box"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/hui"></LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/language_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/china"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:checked="true"
+                    android:text="中文："
+                    android:textSize="18dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/english"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dip"
+                    android:button="@null"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:paddingLeft="30dip"
+                    android:text="English："
+                    android:textSize="18dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="?android:attr/listDivider" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ding_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="顶牛科技检测 v0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2017.1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

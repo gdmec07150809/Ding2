@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000">
+
+        <ImageView
+            android:id="@+id/settings_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bk"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fan"
+            android:layout_toRightOf="@+id/settings_back"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:text="返回"/>
+
+
+
+        <TextView
+            android:id="@+id/add_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="设备列表"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/up"
+        android:id="@+id/sort"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/hui"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/Right"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_toLeftOf="@+id/img"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/up"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                ></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort"
+        android:layout_above="@+id/footer"
+        android:divider="#f2f2f2"
+        android:dividerHeight="1dp"></ListView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0000"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/Manual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_active"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="手动搜索"/>
+        <Button
+            android:id="@+id/automatic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_active"
+            android:textSize="14dp"
+            android:text="自动搜索"/>
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape_active"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="退出"/>
+
+    </LinearLayout>
+</RelativeLayout>
